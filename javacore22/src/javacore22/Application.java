@@ -7,14 +7,15 @@ public class Application {
 		voice cow = message -> System.out.println(message);
 		cow.voice("i am a Cow - Myyyy-Myyy");
 
-		// second task
-
+		// second task;
+		doateble eat = message -> System.out.println(message);
+		doateble walk = message -> System.out.println(message);
+		
+		
 		Frog frog = new Frog();
-		frog.eat("eat");
-		frog.swim("swim");
-		frog.walk("walk");
-		frog.sleep("sleap");
-	}
+		frog.eat(eat);
+		frog.walk(walk);
+		}
 
 }
 
@@ -23,18 +24,6 @@ interface voice {
 	void voice(String msg);
 }
 
-interface eat {
-	void eat(String string);
-}
-
-interface sleep {
-	void sleep(String msg);
-}
-
-interface walk {
-	void walk(String msg);
-}
-
-interface swim {
-	void swim(String msg);
+interface doateble {
+	void somesthing(String msg);
 }

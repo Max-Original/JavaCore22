@@ -1,29 +1,20 @@
 package javacore22;
 
-public class Frog implements sleep,eat,swim,walk{
-
-	@Override
-	public void eat(String string) {
-		// TODO Auto-generated method stub
-		
+public class Frog {
+	
+	public void eat(doateble part) {
+		part.somesthing("frog is eating");;
 	}
 
-	@Override
-	public void walk(String msg) {
-		// TODO Auto-generated method stub
-		
+	public void walk(doateble part) {
+		part.somesthing("frog is walking");
 	}
 
-	@Override
-	public void swim(String msg) {
-		// TODO Auto-generated method stub
-		
+	public void swim(doateble part, String msg) {
+		part.somesthing(msg);
 	}
 
-	@Override
-	public void sleep(String msg) {
-		// TODO Auto-generated method stub
-		
+	public void sleep(doateble part,String msg) {
+		part.somesthing(msg);
 	}
-
 }
